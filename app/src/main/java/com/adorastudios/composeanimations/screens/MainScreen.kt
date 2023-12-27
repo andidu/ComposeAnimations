@@ -52,5 +52,19 @@ fun MainScreen(
                 )
             }
         }
+        item {
+            Button(
+                modifier = Modifier.fillMaxWidth(),
+                onClick = {
+                    navController.navigate(Screen.SideBottomSheet.route)
+                },
+            ) {
+                Text(
+                    modifier = Modifier.align(Alignment.CenterVertically),
+                    text = "SideBottomSheet",
+                    textAlign = TextAlign.Center,
+                )
+            }
+        }
     }
 }
