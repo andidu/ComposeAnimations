@@ -38,5 +38,19 @@ fun MainScreen(
                 )
             }
         }
+        item {
+            Button(
+                modifier = Modifier.fillMaxWidth(),
+                onClick = {
+                    navController.navigate(Screen.SunAnimation.route)
+                },
+            ) {
+                Text(
+                    modifier = Modifier.align(Alignment.CenterVertically),
+                    text = "Sun animation",
+                    textAlign = TextAlign.Center,
+                )
+            }
+        }
     }
 }

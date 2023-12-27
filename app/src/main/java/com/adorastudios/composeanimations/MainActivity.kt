@@ -15,6 +15,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.adorastudios.composeanimations.screens.MainScreen
 import com.adorastudios.composeanimations.screens.screenLazyListWithDragAndDrop.LazyListWithDragAndDropScreen
+import com.adorastudios.composeanimations.screens.screenSunAnimation.SunAnimationScreen
 import com.adorastudios.composeanimations.ui.theme.ComposeAnimationsTheme
 
 class MainActivity : ComponentActivity() {
@@ -41,6 +42,11 @@ class MainActivity : ComponentActivity() {
                             route = Screen.LazyListWithDragAndDrop.route,
                         ) {
                             LazyListWithDragAndDropScreen(navController = navController)
+                        }
+                        composable(
+                            route = Screen.SunAnimation.route,
+                        ) {
+                            SunAnimationScreen(navController = navController)
                         }
                     }
                 }
