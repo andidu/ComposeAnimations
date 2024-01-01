@@ -5,4 +5,5 @@ sealed class Screen(val route: String) {
     object LazyListWithDragAndDrop : Screen("lazy_list_with_drag_and_drop")
     object SunAnimation : Screen("sun_animation")
     object SideBottomSheet : Screen("side_bottom_sheet")
+    object DrawHeart : Screen("draw_heart_screen")
 }

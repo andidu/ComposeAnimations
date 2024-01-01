@@ -66,5 +66,19 @@ fun MainScreen(
                 )
             }
         }
+        item {
+            Button(
+                modifier = Modifier.fillMaxWidth(),
+                onClick = {
+                    navController.navigate(Screen.DrawHeart.route)
+                },
+            ) {
+                Text(
+                    modifier = Modifier.align(Alignment.CenterVertically),
+                    text = "DrawHeart",
+                    textAlign = TextAlign.Center,
+                )
+            }
+        }
     }
 }
