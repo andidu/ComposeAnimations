@@ -80,5 +80,19 @@ fun MainScreen(
                 )
             }
         }
+        item {
+            Button(
+                modifier = Modifier.fillMaxWidth(),
+                onClick = {
+                    navController.navigate(Screen.AnimatedWave.route)
+                },
+            ) {
+                Text(
+                    modifier = Modifier.align(Alignment.CenterVertically),
+                    text = "AnimatedWave",
+                    textAlign = TextAlign.Center,
+                )
+            }
+        }
     }
 }

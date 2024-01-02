@@ -14,6 +14,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.adorastudios.composeanimations.screens.MainScreen
+import com.adorastudios.composeanimations.screens.screenAnimatedWave.AnimatedWaveScreen
 import com.adorastudios.composeanimations.screens.screenDrawHeart.DrawHeartScreen
 import com.adorastudios.composeanimations.screens.screenLazyListWithDragAndDrop.LazyListWithDragAndDropScreen
 import com.adorastudios.composeanimations.screens.screenSideBottomSheet.SideBottomSheetScreen
@@ -59,6 +60,11 @@ class MainActivity : ComponentActivity() {
                             route = Screen.DrawHeart.route,
                         ) {
                             DrawHeartScreen(navController = navController)
+                        }
+                        composable(
+                            route = Screen.AnimatedWave.route,
+                        ) {
+                            AnimatedWaveScreen(navController = navController)
                         }
                     }
                 }

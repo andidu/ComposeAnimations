@@ -6,4 +6,5 @@ sealed class Screen(val route: String) {
     object SunAnimation : Screen("sun_animation")
     object SideBottomSheet : Screen("side_bottom_sheet")
     object DrawHeart : Screen("draw_heart_screen")
+    object AnimatedWave : Screen("animate_wave")
 }
