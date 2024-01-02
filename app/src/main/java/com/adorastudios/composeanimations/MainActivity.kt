@@ -16,6 +16,7 @@ import androidx.navigation.compose.rememberNavController
 import com.adorastudios.composeanimations.screens.MainScreen
 import com.adorastudios.composeanimations.screens.screenAnimatedWave.AnimatedWaveScreen
 import com.adorastudios.composeanimations.screens.screenDrawHeart.DrawHeartScreen
+import com.adorastudios.composeanimations.screens.screenGradientButton.GradientButtonScreen
 import com.adorastudios.composeanimations.screens.screenLazyListWithDragAndDrop.LazyListWithDragAndDropScreen
 import com.adorastudios.composeanimations.screens.screenSideBottomSheet.SideBottomSheetScreen
 import com.adorastudios.composeanimations.screens.screenSunAnimation.SunAnimationScreen
@@ -65,6 +66,11 @@ class MainActivity : ComponentActivity() {
                             route = Screen.AnimatedWave.route,
                         ) {
                             AnimatedWaveScreen(navController = navController)
+                        }
+                        composable(
+                            route = Screen.GradientButton.route,
+                        ) {
+                            GradientButtonScreen(navController = navController)
                         }
                     }
                 }

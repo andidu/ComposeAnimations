@@ -94,5 +94,19 @@ fun MainScreen(
                 )
             }
         }
+        item {
+            Button(
+                modifier = Modifier.fillMaxWidth(),
+                onClick = {
+                    navController.navigate(Screen.GradientButton.route)
+                },
+            ) {
+                Text(
+                    modifier = Modifier.align(Alignment.CenterVertically),
+                    text = "GradientButton",
+                    textAlign = TextAlign.Center,
+                )
+            }
+        }
     }
 }
